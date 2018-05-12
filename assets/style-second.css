@@ -1,0 +1,236 @@
+
+
+#map {
+        height: 600px;
+        width: 100%;
+     }
+header  a:hover {
+  text-decoration: none;
+   color: black;
+
+}
+.container {
+  width: 100%;
+}
+.nav-container span {
+  /* padding: 0 0px; */
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  /* text-align: center; */
+  font-style: normal;
+}
+
+.second-page {
+
+  display: flex;
+  width: 100%;
+
+
+  /* justify-content: space-around; */
+  padding-top: 80px;
+  /* border: 1px solid red; */
+}
+.second-page p {
+  padding: 10px 10px 0px 10px;
+  text-align: center;
+
+    /* border: 1px solid red; */
+    }
+
+.second-page h3 {
+  font-size: 20px;
+  padding: 10px 0;
+  margin: 0;
+}
+.second-page h4 {
+  font-size: 15px;
+  padding: 5px 0;
+  margin: 0;
+}
+.class-1menu {
+  display: flex;
+  width: 30%;
+  height: 620px;
+      overflow-y: auto;
+    flex-direction: column;
+  /* justify-content: space-around; */
+  /* border: 1px solid red; */
+}
+
+.second-page a {
+   /* font-size: : 1.8vw; */
+}
+.class-2text {
+  /* display: flex; */
+  width: 70%;
+  overflow-y: auto;
+  text-align: left;
+  height: 620px;
+  padding: 0px;
+  /* position: static; */
+  /* justify-content: space-around; */
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.class-2text p {
+  text-align: left;
+  padding-left: 20px;
+}
+.class-2text tr {
+  /* border: 1px solid red; */
+  height:300px;
+  /* width: 100%; */
+/* border-spacing: center; */
+}
+.class-2text-img img{
+width:auto;
+height: auto;
+  /* min-height:350px; */
+  max-width:500px;
+min-height: 100%;
+  max-height:340px;
+  padding: 0 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.class-1 {
+    display: flex;
+      width: 60%;
+
+}
+.class-2 {
+  display: flex;
+  width: 40%;
+  /* position: static; */
+  /* justify-content: space-around; */
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.class-1menu li {
+  /* width: 30%; */
+
+  /* border: 1px solid red; */
+}
+.class-2 li {
+  /* width: 70%; */
+
+  /* border: 1px solid red; */
+}
+.map-container-2 *{
+   /* width: 100%; */
+  /* height: 560px; */
+  /* max-height: 500px; */
+
+}
+.fa-square {
+  cursor: context-menu;
+  background-color: white;
+/* font-size: .75em; */
+
+}
+.nav-menu li {
+  display:flex;
+  align-items: center;
+}
+.nav-menu a {
+  font-size: 15px;
+}
+svg {
+  margin: 0 5px 0 5px;
+
+
+}
+.mobile-flex-container {
+  /* flex-grow: 1; */
+  display: block; /* nustatome flex containeri pozicionavimui */
+  justify-content: space-between; /* atstumiame elementus viena nuo kito
+  vienodais tarpais */
+}
+
+.hidden{
+  display: none;
+}
+.mobile {
+  position: relative;
+  display: none;
+  /* overflow: hidden; */
+  text-align: right;
+}
+.notVisible {
+  display: none;
+}
+.form-class *{
+  position: relative;
+
+}
+.visible {
+   position: absolute;
+  display: block;
+padding: 10px;
+margin: 20px;
+  /* top: 20px;  */
+  /* left: 10px; */
+  /* border: 1px solid red; */
+  background-color:  #ff9900;
+  text-align: center;
+}
+/*
+.nav a, .mobile a {
+ transition: 0.3s;
+ text-decoration: none;
+ color: #000000;
+  text-transform: capitalize;
+ letter-spacing: 3px;
+ display: block;
+ padding: 10px;
+} */
+
+@media only screen  and (max-width:767px) {
+  .second-page {
+
+    display: block;
+    width: 100%;
+    /* height: 650px; */
+      /* overflow-y: auto; */
+
+    /* justify-content: space-around; */
+    padding-top: 80px;
+    /* border: 1px solid red; */
+  }
+  .mobile {
+    display: block; }
+    .nav.flex-container {
+      display:none;
+      flex-direction: column; }
+
+      .nav.mobile-flex-container li a:hover { /* pritaikysime stilius kai uzvesime pelyte ant a */
+      /* text-decoration: none; */
+      background: white;
+      }
+
+    .nav.mobile-flex-container {
+      position: absolute;
+        right: 0%;
+      top: 130%;
+      font-weight: bold;
+      opacity: 1;
+         background-color: lightgray;
+
+      }
+  .class-1 {
+      /* display: flex; */
+        width: 100%;
+        height: 500px;
+          overflow-y: auto;
+  }
+  .class-2 {
+    /* display: flex; */
+    width: 100%;
+    /* position: static; */
+    /* justify-content: space-around; */
+
+    /* border: 1px solid red; */
+  }
+}

@@ -1,0 +1,402 @@
+:target:before {
+content:"";
+display:block;
+height:80px; /* fixed header height*/
+margin:-80px 0 0; /* negative fixed header height */
+}/*
+  GENERAL STYLES
+*/
+* {
+  box-sizing: border-box; /* nustato reikalinga box model */
+  }
+ .container {
+
+  padding: 0 30px; /* uzdedame tarpus kaireje ir desineje */
+}
+.footer-container {
+  padding: 0 0;
+}
+img {
+  width: 100%; /* paveikslelio ploti nustatome*/
+/* max-width */
+     }
+
+  body {
+      margin: 0;
+      font-family: Arial;
+  }
+
+header span {
+  padding: 0 0px;
+  font-size: 2vw;
+  letter-spacing: 2px;
+  /* text-align: center; */
+  font-style: italic;
+}
+.nav-container span {
+  /* padding: 0 0px; */
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  /* text-align: center; */
+  font-style: normal;
+}
+
+.flex-container {
+  display: flex;
+justify-content: space-around;
+ /* border: 1px solid red; */
+   align-items: center;
+   flex-grow: 1;
+   height: 60px;
+}
+.flex-container li {
+
+     /* border: 1px solid blue; */
+}
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+h3 {
+  padding: 10px;
+  font-size: 2vw;
+  letter-spacing: 2px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+h4 {
+  margin-top: 0px; /* atititraukiame nuo virsaus */
+  /*padding-bottom: 10px;  atitraukiame apatini remeli */
+  margin-bottom: 0px; /* Atitraukiu nuo remelio apacios */
+  /*border: 1px solid rgba(0,0,0,0.1);  uzdedu   remeli */
+  padding: 20px;
+  font-size: 1.5vw;
+  text-align: justify;
+  /* border: 1px solid red; */
+   }
+
+ .menu-list a{
+ transition: 0.3s; /* uzdedame perejima ant efektu (siuo atveju ant hover efekto aprasyto zemiau) */
+ text-decoration: none; /* panaikiname teksto pabraukima */
+ color: #000000; /* teksto spalva */
+/* font-size: 1.5vw; */
+ text-transform: capitalize; /* pirma teksto raide didzioji */
+ letter-spacing: 2px; /* tarpai tarp raidziu */
+ display: block; /* uzdedame sia savybe, kad galetume uzdeti padding */
+ padding: 5px; /* uzdedame tarpus ant kiekvieno krasto */
+}
+
+.pradzia {
+  display: flex;
+  justify-content: space-around;
+}
+.pradzia p{
+  padding: 0 20px;
+  text-align: justify;
+  font-size: 1.2vw;
+}
+
+.pradzia li{
+/* border: 1px solid red; */
+    width: 50%;
+  padding: 5px;
+}
+.menu-list {
+  display: flex;
+  justify-content: space-around;
+
+}
+.menu-list p {
+    /* border: 1px solid red; */
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+.menu-list li{
+/* border: 1px solid red; */
+    width: 25%;
+  padding: 5px;
+}
+.inside-one {
+  display: flex;
+  justify-content: space-around;
+}
+.inside-two {
+  display: flex;
+  justify-content: space-around;
+}
+
+.inside-one  li{
+  /* border: 1px solid red; */
+    width: 100%;
+    list-style-type: none;
+    /* list-style-image: url('images/serksnas2.jpg'); */
+  }
+.inside-one  div{
+  /* border: 1px solid red; */
+   width: 50%;
+  margin: 5px;
+  padding: 5px;
+}
+.inside-two  li{
+  /* border: 1px solid red; */
+    width: 100%;
+    list-style-type: none;
+    /* list-style-image: url('images/sodyba2.jpg'); */
+}
+.inside-two  div{
+  /* border: 1px solid red; */
+   width: 100%;
+  margin: 5px;
+  padding: 5px;
+}
+.inside-three {
+  /* border: 1px solid red; */
+  margin: 5px;
+  padding: 5px;
+}
+.inside-three iframe{
+  height: 195px;
+
+}
+.nav-container li a:hover, .nav-container  a:hover {
+ background: #cccccc;
+}
+/* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
+header {
+ padding: 15px 0 0px 0;
+ -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8);
+ box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.8);
+ position: fixed;
+ width: 100%;
+ background: linear-gradient(to bottom, #ffffff 0%, #336600 100%);
+ z-index: 99999;
+ top: 0;
+}
+
+header a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav a, .mobile a {
+ transition: 0.3s; /* uzdedame perejima ant efektu (siuo atveju ant hover efekto aprasyto zemiau) */
+ text-decoration: none; /* panaikiname teksto pabraukima */
+ color: #000000; /* teksto spalva */
+ /* font-size: 20px; */
+ text-transform: capitalize; /* pirma teksto raide didzioji */
+ letter-spacing: 3px; /* tarpai tarp raidziu */
+ display: block; /* uzdedame sia savybe, kad galetume uzdeti padding */
+ padding: 10px; /* uzdedame tarpus ant kiekvieno krasto */
+}
+.nav-container li a:hover { /* pritaikysime stilius kai uzvesime pelyte ant a */
+ background: #cccccc;/* Fono spalva */
+}
+.nav-container {
+flex-shrink: 0; /* nemazinti navigacijos mazejant langui */
+}
+
+.mobile img:hover {
+  cursor: pointer;
+}
+.mobile-flex-container {
+  /* flex-grow: 1; */
+  display: block; /* nustatome flex containeri pozicionavimui */
+  justify-content: space-between; /* atstumiame elementus viena nuo kito
+  vienodais tarpais */
+}
+
+.image-wrapper img {
+  width: 100%;  /*nustatome paveiksleliui ploti 100% pagal tevini elementa */
+z-index: -1;   /*pastumiame paveikslely z asyje atgal, kad matytusi headerio seselis */
+  position: relative;/*  padarome, kad veiktu z-index, nes su position:static(default), neveikia */
+}
+
+.search-form h3 {
+  font-weight: bold; /* pastoriname raides */
+  text-align: left; /* iscentruojame teksta */
+  text-decoration: underline;
+  letter-spacing: 4px; /* tarpai tarp raidziu */
+  font-size: 25px;/* teksto dydis */
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: white;
+  opacity: 0.8; /* padaro bloka permatoma */
+}
+
+.search-form h2 {
+    font-weight: normal; /* pastoriname raides */
+  text-align: left;; /* iscentruojame teksta */
+  letter-spacing: 2px; /* tarpai tarp raidziu */
+  font-size: 30px;/* teksto dydis */
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: white;
+  opacity: 0.8; /* padaro bloka permatoma */
+}
+.search-form {
+  position: absolute; /* nustatome tam, kad galetumeme uzkelti ant paveikslelio */
+  width: 200px;/* nustatome ploti */
+  height: 200px;
+  padding: 10px;
+   /* border: 1px solid white; */
+  box-sizing: border-box;
+  left: 2%;
+  margin: 0;
+  top: 15%; /* atitraukiame sita bloka nuo arciausio tevinio relative elemento virsaus 45% */
+}
+
+.flex-container-add  {
+  display: flex;
+   justify-content: space-between;
+}
+
+ .flex-container-add li {
+  margin:  5px;
+  width: 32%;
+}
+
+.flex-container-add a {
+ text-decoration: none;
+ /* font-size: 2vw; */
+ font-weight: bold;
+}
+.flex-container-add p {
+padding: 0;
+  font-size: 1.5vw;
+
+}
+.add-project-item {
+  width: 50%; /* nustatome ploti */
+  position: relative;  /* padarome, kad paragrafas butu pozicionuojamas pagal sita elementa */
+   float: left;
+}
+
+/* for hidden frame */
+
+.hide { position:absolute; top:-1px; left:-1px; width:1px; height:1px; }
+
+ .map-container *{
+    width: 100%;
+   height: 600px;
+   border:0;
+    padding: 0 20px 0 20px;
+
+}
+
+.hidden{
+  display: none;
+}
+.mobile {
+  position: relative;
+  display: none;
+  /* overflow: hidden; */
+  text-align: right;
+}
+
+
+/*  Footer   */
+footer {
+  text-align: center;
+  background: linear-gradient(to top, #ffffff 0%, #336600 100%);
+  /* margin-top: -2px; */
+  height: 60px;
+}
+footer a, footer {
+  color: black;
+  padding-top: 10px;
+}
+
+@media only screen  and (max-width:767px) {
+
+  .inside-three iframe{
+  height: 360px;
+
+  }
+
+  .pradzia {
+    display: block;
+    justify-content: space-around;
+  }
+  .pradzia li{
+  /* border: 1px solid red; */
+      width: 100%;
+    padding: 5px;
+  }
+  .pradzia p{
+    font-size: 2vw;
+    /* color: green; */
+  }
+
+  .menu-list {
+    display: block;
+    justify-content: space-around;
+
+  }
+  .menu-list li{
+  /* border: 1px solid red; */
+      width: 100%;
+    padding: 5px;
+  }
+  .menu-list a {
+    font-size: 2.5vw;
+  }
+  h3 {
+    font-size: 2.8vw;
+  }
+  h4 {
+    font-size: 2.4vw;
+  }
+  header span {
+
+    font-size: 2.8vw;
+  }
+  /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+  .mobile {
+    display: block; }
+
+
+
+    h2 {
+      font-size: 25px;
+    }
+
+     h4 {
+      font-size: 15px;
+    }
+           .search-form h1 {
+                  font-size: 25px;/* teksto dydis */
+                }
+       .search-form h2 {
+         font-size: 20px;/* teksto dydis */
+       }
+
+       .search-form {
+         position: absolute; /* nustatome tam, kad galetumeme uzkelti ant paveikslelio */
+         width: 200px;/* nustatome ploti */
+         height: 170px;
+         padding: 10px;
+         box-sizing: border-box;
+         left: 2%;
+         margin: 0;
+        top: 15%;
+       }
+
+  .nav.flex-container {
+    display:none;
+    flex-direction: column; }
+
+    .nav.mobile-flex-container li a:hover { /* pritaikysime stilius kai uzvesime pelyte ant a */
+    /* text-decoration: none; */
+    background: white;
+    }
+
+  .nav.mobile-flex-container {
+    position: absolute;
+      right: 0%;
+    top: 130%;
+    font-weight: bold;
+    opacity: 1;
+      background-color: lightgray;
+
+    }
+
+}
