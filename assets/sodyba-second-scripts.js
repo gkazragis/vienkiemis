@@ -324,7 +324,7 @@ jQuery(document).ready(function($){
                      // var map12 = "https://goo.gl/maps/FWewxY6s1D22";
     var formONOFF = 0;
     var boxes = ["far fa-square","far fa-check-square"];
-    
+
 /*
     $('#switch-lang').click(function() {
       alert("Click");
@@ -380,7 +380,7 @@ function afterClickTransfer() {
       sessionStorage.myvar = param;
        // alert("In changetransfer " + sessionStorage.myvar);
 
-      window.open('second-page.php',"_self");
+      window.open('second-page.html',"_self");
 
 
       // afterClick(param);
