@@ -220,11 +220,11 @@
               </li>
               <li >
                  <div class="inside-three">
-                   <!--  
+
                     <iframe id="player" type="text/html" width=100%
                       src="http://www.youtube.com/embed/JOEdXSHD7Oo?enablejsapi=1"
-                          frameborder="0"></iframe> 
-                          -->
+                          frameborder="0"></iframe>
+
                  </div>
                   <p><span lang="lt">Anykščių apylinkių grožis</span><span lang="en">Anykščiai district beauty</span></p>
                 </li>
@@ -262,7 +262,8 @@
   <footer>
         <div class="foooter-container">
           <br>
-          <p>Sukūrė <a href="#" target="_blank">www.sodyba7.eu</a></p>
+        <p> <span lang="lt">Sukūrė &#169; </span><span lang="en">Created by </span><a href="#" target="_blank">gKa</p>
+
         </div>
       </footer>
 
@@ -270,11 +271,11 @@
    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm3FJgR-wffJ9RFrDbIEp5l_U4rTWDo44&callback=myMap"></script> -->
 
    <script type="text/javascript">
-   // sessionStorage.setItem("lang") = "lt";
-   // sessionStorage.myClick = 0;
-   // sessionStorage.myvar = 0;
-   // alert("Click =" + sessionStorage.myClick);
-   // alert("lang =" + sessionStorage.getItem("lang"));
+   if(sessionStorage.getItem("lang") == "en") {
+    sessionStorage.myClick = 0;
+    sessionStorage.myvar = 0; }
+    // alert("Click =" + sessionStorage.myClick);
+    // alert("lang =" + sessionStorage.getItem("lang"));
 
    if(sessionStorage.myClick == 0) {
      $('[lang="en"]').hide();
