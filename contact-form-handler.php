@@ -1,16 +1,16 @@
 <?php
 $errors = '';
 $myemail = 'giedriusnnt@gmail.com';//<-----Put Your email address here.
-if(empty($_POST['name'])  ||
-   empty($_POST['email']) ||
-   empty($_POST['meniu']) ||
-   empty($_POST['message']))
+if(empty($_GET['name'])  ||
+   empty($_GET['email']) ||
+   empty($_GET['meniu']) ||
+   empty($_GET['message']))
 {
     $errors .= "\n Error: all fields are required";
 }
 
-$name = $_POST['name'];
-$email_address = $_POST['email'];
+$name = $_GET['name'];
+$email_address = $_GET['email'];
 // $menu_list = $_POST['meniu'];
 // $message = $_POST['message'];
 // also add dates !!!
