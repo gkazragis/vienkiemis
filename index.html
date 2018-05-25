@@ -271,11 +271,12 @@
    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBm3FJgR-wffJ9RFrDbIEp5l_U4rTWDo44&callback=myMap"></script> -->
 
    <script type="text/javascript">
+   if(sessionStorage.myClick==null) sessionStorage.myClick = 0;
    if(sessionStorage.getItem("lang") == "en") {
     sessionStorage.myClick = 0;
     sessionStorage.myvar = 0; }
-    // alert("Click =" + sessionStorage.myClick);
-    // alert("lang =" + sessionStorage.getItem("lang"));
+     // alert("Click =" + sessionStorage.myClick);
+     // alert("lang =" + sessionStorage.getItem("lang"));
 
    if(sessionStorage.myClick == 0) {
      $('[lang="en"]').hide();
