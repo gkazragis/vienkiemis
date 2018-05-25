@@ -32,7 +32,7 @@ if( empty($errors))
 
 	$headers = "From: $myemail\n";
 	$headers .= "Reply-To: $email_address";
-
+echo "mail to " . $to;
 	mail($to,$email_subject,$email_body,$headers);
 
 	//redirect to the 'thank you' page
