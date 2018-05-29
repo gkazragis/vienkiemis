@@ -1,4 +1,5 @@
 <?php
+echo ("Handler");
 $errors = '';
 $myemail = 'giedriusnnt@gmail.com';//<-----Put Your email address here.
 if(empty($_GET['name'])  ||
