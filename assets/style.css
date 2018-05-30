@@ -283,7 +283,7 @@ padding: 0;
 }
 
 .hidden{
-  display: none;
+  display: block;
 }
 .mobile {
   position: relative;
