@@ -416,7 +416,7 @@ function afterClickTransfer() {
 function goBack() {
 
      window.close();
-     sessionStorage.myvar = 0;
+     // sessionStorage.myvar = 0;
      window.history.back();
      /*
      if(sessionStorage.myClick == 1)
@@ -526,6 +526,7 @@ function mouseOver(x) {
             }
 
     function afterClick(filename) {
+      alert("aferclick filename= " + filename);
       var filename;
       var name;
       var langParam;
@@ -533,10 +534,12 @@ function mouseOver(x) {
       var addrText = 'Address: ';
       var midname='Images/img' + filename;
       name = midname + '1.jpg';
+      alert("aferclick name= " + name);
       sessionStorage.myvar = filename;  /*  kam to reikia ? */
        // alert('After click ' + sessionStorage.getItem("lang"));
       // alert(selection[filename-1].name.Eng);
       // alert(selection[filename-1].name.Lt);
+      // alert("aferclick name= " + name);
       document.getElementById('img1').src = name;
       document.getElementById('img2').src = midname + '2.jpg';
       document.getElementById('img3').src = midname + '3.jpg';
