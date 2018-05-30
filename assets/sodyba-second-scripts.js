@@ -526,7 +526,7 @@ function mouseOver(x) {
             }
 
     function afterClick(filename) {
-      alert("aferclick filename= " + filename);
+      // alert("aferclick filename= " + filename);
       var filename;
       var name;
       var langParam;
@@ -534,7 +534,7 @@ function mouseOver(x) {
       var addrText = 'Address: ';
       var midname='Images/img' + filename;
       name = midname + '1.jpg';
-      alert("aferclick name= " + name);
+      // alert("aferclick name= " + name);
       sessionStorage.myvar = filename;  /*  kam to reikia ? */
        // alert('After click ' + sessionStorage.getItem("lang"));
       // alert(selection[filename-1].name.Eng);
