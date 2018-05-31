@@ -291,7 +291,9 @@ padding: 0;
   /* overflow: hidden; */
   text-align: right;
 }
-
+.apiemus img{
+ padding: 0 20px;
+}
 
 /*  Footer   */
 footer {
@@ -306,6 +308,10 @@ footer a, footer {
 }
 
 @media only screen  and (max-width:767px) {
+ .apiemus img{
+  padding: 0 10px;
+}
+
   .menu-list p {
     font-size: 3vw;
   }
@@ -317,6 +323,7 @@ footer a, footer {
 
   .map-container *{
          height: 300px;  /* was 600 - need o change to vw */
+         padding: 0 10px;
         }
 
   .inside-three iframe{
@@ -364,7 +371,7 @@ footer a, footer {
   }
   h3 {
     font-size: 3.5vw;  /* was 2.8 */
-    padding: 0;
+    padding: 5px 0;
   }
   h4 {
     font-size: 2.4vw;
@@ -373,11 +380,10 @@ footer a, footer {
 
     font-size: 3.5vw;  /* was 2.8 */
   }
-  /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
+
   .mobile {
-    display: block; }
-
-
+    display: block;
+   }
 
     h2 {
       font-size: 25px;
@@ -385,10 +391,12 @@ footer a, footer {
 
      h4 {
       font-size: 2.8vw;   /* was 15px  */
+      padding: 0 5px;
     }
-           .search-form h1 {
-                  font-size: 25px;/* teksto dydis */
-                }
+     .search-form h1 {
+          font-size: 25px;/* teksto dydis */
+          }
+
        .search-form h2 {
          font-size: 20px;/* teksto dydis */
        }
