@@ -87,6 +87,7 @@ jQuery(document).ready(function($){
         	}, 1000);
         });
   */
+/*
       jQuery(document).ready(function($){
 
         document.querySelector("#burger-button").addEventListener('click',function(){
@@ -95,7 +96,7 @@ jQuery(document).ready(function($){
         });
 
       });
-
+*/
 
 
 function Siandien(kur)
