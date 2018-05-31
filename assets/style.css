@@ -2,7 +2,7 @@
 content:"";
 display:block;
 height:80px; /* fixed header height*/
-margin:0px 0 0; /* -80 negative fixed header height */
+margin:0px 0 0; /* negative fixed header height */
 }/*
   GENERAL STYLES
 */
@@ -35,7 +35,7 @@ header span {
 }
 .nav-container span {
   /* padding: 0 0px; */
-  font-size: 20px;
+  font-size: 1.5vw;    /* was 20px  */
   font-weight: normal;
   letter-spacing: 2px;
   /* text-align: center; */
@@ -283,7 +283,7 @@ padding: 0;
 }
 
 .hidden{
-  display: none;   /* block */
+  display: none;
 }
 .mobile {
   position: relative;
@@ -306,11 +306,33 @@ footer a, footer {
 }
 
 @media only screen  and (max-width:767px) {
+  .menu-list p {
+    font-size: 3vw;
+  }
+
+  h4 {
+    padding: 0;  /* was 20px  */
+    font-size: 3vw; /* was 1.5vw */
+     }
+
+  .map-container *{
+         height: 300px;  /* was 600 - need o change to vw */
+        }
 
   .inside-three iframe{
-  height: 360px;
-
+  height: 360px;  /* changed from 360 */
   }
+  .container {
+    padding: 0; /* nuimame tarpus kaireje ir desineje */
+ }
+
+  .search-form {
+  display:none;
+  }
+  .nav-container span {
+      font-size: 2.8vw;    /* was 1.5vw  */
+    font-weight: bold;
+      }
 
   .pradzia {
     display: block;
@@ -322,8 +344,9 @@ footer a, footer {
     padding: 5px;
   }
   .pradzia p{
-    font-size: 2vw;
+    font-size: 2.5vw; /* changed from 2 */
     /* color: green; */
+    padding: 0;
   }
 
   .menu-list {
@@ -340,14 +363,15 @@ footer a, footer {
     font-size: 2.5vw;
   }
   h3 {
-    font-size: 2.8vw;
+    font-size: 3.5vw;  /* was 2.8 */
+    padding: 0;
   }
   h4 {
     font-size: 2.4vw;
   }
   header span {
 
-    font-size: 2.8vw;
+    font-size: 3.5vw;  /* was 2.8 */
   }
   /* aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa */
   .mobile {
@@ -360,7 +384,7 @@ footer a, footer {
     }
 
      h4 {
-      font-size: 15px;
+      font-size: 2.8vw;   /* was 15px  */
     }
            .search-form h1 {
                   font-size: 25px;/* teksto dydis */
