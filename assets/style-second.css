@@ -12,9 +12,9 @@ header  a:hover {
 .container {
   width: 100%;
 }
-.nav-container span {
+.nav-container a {   /* menu items   */
   /* padding: 0 0px; */
-  font-size: 20px;
+  font-size: 2vw;    /* was 20px  */
   font-weight: normal;
   letter-spacing: 2px;
   /* text-align: center; */
@@ -39,12 +39,12 @@ header  a:hover {
     }
 
 .second-page h3 {
-  font-size: 20px;
+  font-size: 2vw;    /* was 20px  */
   padding: 10px 0;
   margin: 0;
 }
 .second-page h4 {
-  font-size: 15px;
+  font-size: 1.5vw;    /* was 15px  */
   padding: 5px 0;
   margin: 0;
 }
@@ -66,7 +66,7 @@ header  a:hover {
   width: 70%;
   overflow-y: auto;
   text-align: left;
-  height: 620px;
+  height: 620px;   /* ??? */
   padding: 0px;
   /* position: static; */
   /* justify-content: space-around; */
@@ -135,7 +135,7 @@ min-height: 100%;
   align-items: center;
 }
 .nav-menu a {
-  font-size: 15px;
+  font-size: 1.5vw;    /* was 15px  */
 }
 svg {
   margin: 0 5px 0 5px;
@@ -188,6 +188,17 @@ margin: 20px;
 } */
 
 @media only screen  and (max-width:767px) {
+  #map {
+          height: 300px;
+               }
+  .nav-container a {   /* menu items   */
+      /*font-size: 1.5vw;     was 20px  */
+    }
+    .class-2text tr {
+      /* border: 1px solid red; */
+      height:100px;  /* was 300 */
+      }
+
   .second-page {
 
     display: block;
