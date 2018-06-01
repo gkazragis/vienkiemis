@@ -13,77 +13,83 @@ header  a:hover {
   width: 100%;
 }
 .nav-container a {   /* menu items   */
-  /* padding: 0 0px; */
-  font-size: 2vw;    /* was 20px  */
-  font-weight: normal;
-  letter-spacing: 2px;
+  /* padding: 0; */
+  /*font-size: 2vw;     was 20px  */
+  /* font-weight: normal; */
+  /* letter-spacing: 2px; */
   /* text-align: center; */
-  font-style: normal;
+  /* font-style: normal; */
+}
+.nav.nav-container a {
+  /* border: 1px solid red; */
+  padding:  5px;
 }
 
 .second-page {
-
   display: flex;
   width: 100%;
-
-
   /* justify-content: space-around; */
   padding-top: 80px;
   /* border: 1px solid red; */
 }
-.second-page p {
+.second-page p {      /*  only text after carousell  */
   padding: 10px 10px 0px 10px;
   text-align: center;
-
-    /* border: 1px solid red; */
+  font-size: 1.2vw;
+     /* border: 1px solid red;  */
     }
 
-.second-page h3 {
+.second-page h3 {    /*  paslauga, pramoga, poilsio organizavimas */
   font-size: 2vw;    /* was 20px  */
   padding: 10px 0;
   margin: 0;
+  /* border: 1px solid red; */
 }
-.second-page h4 {
+.second-page h4 {     /*  not used */
   font-size: 1.5vw;    /* was 15px  */
   padding: 5px 0;
   margin: 0;
+  /* border: 1px solid red; */
 }
-.class-1menu {
+.class-1menu {    /* menu left*/
   display: flex;
   width: 30%;
   height: 620px;
       overflow-y: auto;
     flex-direction: column;
   /* justify-content: space-around; */
-  /* border: 1px solid red; */
+   /* border: 1px solid red;  */
 }
 
-.second-page a {
-   /* font-size: : 1.8vw; */
+.second-page a {  /*  lef menu items, http in text afer carousell, items in map*/
+
 }
-.class-2text {
+.class-2text {    /*  block in middle of page  */
   /* display: flex; */
   width: 70%;
   overflow-y: auto;
   text-align: left;
-  height: 620px;   /* ??? */
+  height: 620px;   /* ???  nustatyti kintamą aukštį*/
   padding: 0px;
   /* position: static; */
   /* justify-content: space-around; */
   flex-direction: column;
-  /* border: 1px solid red; */
+   /* border: 1px solid red; */
 }
-.class-2text p {
+.class-2text p , a{  /* text in middle part */
   text-align: left;
-  padding-left: 20px;
-}
-.class-2text tr {
+  padding-left: 10px;
+  font-size: 1.2vw;
   /* border: 1px solid red; */
+}
+
+.class-2text tr {    /* img wrapping box  */
+   /* border: 1px solid red;  */
   height:300px;
   /* width: 100%; */
 /* border-spacing: center; */
 }
-.class-2text-img img{
+.class-2text-img img{   /* img in the box  */
 width:auto;
 height: auto;
   /* min-height:350px; */
@@ -93,36 +99,37 @@ min-height: 100%;
   padding: 0 10px;
   display: block;
   margin: 0 auto;
+  /* border: 1px solid red; */
 }
 
-.class-1 {
+.class-1 {    /*  1 ad 2 parts of page*/
     display: flex;
       width: 60%;
-
+/* border: 1px solid red; */
 }
-.class-2 {
+.class-2 {    /*  3 part of page*/
   display: flex;
   width: 40%;
   /* position: static; */
   /* justify-content: space-around; */
   flex-direction: column;
-  /* border: 1px solid red; */
+  /* border: 1px solid red;  */
 }
-.class-1menu li {
+.class-1menu li {   /* lef menu equally  */
   /* width: 30%; */
 
-  /* border: 1px solid red; */
+    /* border: 1px solid red;  */
 }
-.class-2 li {
+.class-2 li {   /* nohing */
   /* width: 70%; */
 
-  /* border: 1px solid red; */
+    /* border: 1px solid red;   */
 }
-.map-container-2 *{
+.map-container-2 *{  /* all parts of map - no usable  */
    /* width: 100%; */
   /* height: 560px; */
   /* max-height: 500px; */
-
+/* border: 1px solid red; */
 }
 .fa-square {
   cursor: context-menu;
@@ -130,42 +137,46 @@ min-height: 100%;
 /* font-size: .75em; */
 
 }
-.nav-menu li {
+.nav-menu li { /* same as .class-1menu li */
   display:flex;
   align-items: center;
+  /* border: 1px solid red; */
 }
-.nav-menu a {
+.nav-menu a {  /* same as .class-1menu li */
   font-size: 1.5vw;    /* was 15px  */
+  /* border: 1px solid red; */
+
 }
 svg {
   margin: 0 5px 0 5px;
 
 
 }
-.mobile-flex-container {
+.mobile-flex-container {  /* nohing  */
   /* flex-grow: 1; */
   display: block; /* nustatome flex containeri pozicionavimui */
-  justify-content: space-between; /* atstumiame elementus viena nuo kito
-  vienodais tarpais */
+  justify-content: space-between;
+
 }
 
 .hidden{
   display: none;
 }
-.mobile {
+.mobile {  /* burger box */
   position: relative;
   display: none;
   /* overflow: hidden; */
   text-align: right;
+
 }
 .notVisible {
   display: none;
 }
-.form-class *{
+.form-class *{  /*  order form  */
   position: relative;
 
 }
-.visible {
+.visible {    /*  order form box */
    position: absolute;
   display: block;
 padding: 10px;
@@ -175,6 +186,7 @@ margin: 20px;
   /* border: 1px solid red; */
   background-color:  #ff9900;
   text-align: center;
+
 }
 /*
 .nav a, .mobile a {
@@ -185,17 +197,36 @@ margin: 20px;
  letter-spacing: 3px;
  display: block;
  padding: 10px;
-} */
+ border: 1px solid red;
+}
+*/
 
 @media only screen  and (max-width:767px) {
   #map {
           height: 300px;
-               }
-  .nav-container a {   /* menu items   */
-      /*font-size: 1.5vw;     was 20px  */
+          width: 100%;
+       }
+       .second-page p,a {      /*  only text after carousell  */
+
+        font-size: 2.5vw;
+            /* border: 1px solid red;  */
+           }
+           .second-page h3 {    /*  paslauga, pramoga, poilsio organizavimas */
+             font-size: 2.8vw;    /* was 20px  */
+
+           }
+           .class-2tex p , a{
+             /* font-size: 2.5vw;  */
+            /* border: 1px solid red */
+           }
+  .nav-container a {   /* menu items  no equal */
+      /* font-size: 1.5vw;  no work  was 20px  */
+
+
     }
     .class-2text tr {
       /* border: 1px solid red; */
+
       height:100px;  /* was 300 */
       }
 
@@ -212,7 +243,9 @@ margin: 20px;
   }
   .mobile {
     display: block; }
-    .nav.flex-container {
+
+    .nav.flex-container { /* not used */
+        /* border: 1px solid red; */
       display:none;
       flex-direction: column; }
 
@@ -221,7 +254,7 @@ margin: 20px;
       background: white;
       }
 
-    .nav.mobile-flex-container {
+    .nav.mobile-flex-container { /* not used  */
       position: absolute;
         right: 0%;
       top: 130%;
@@ -235,6 +268,7 @@ margin: 20px;
         width: 100%;
         height: 500px;
           overflow-y: auto;
+
   }
   .class-2 {
     /* display: flex; */
