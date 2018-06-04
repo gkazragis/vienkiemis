@@ -264,11 +264,13 @@
  // alert("Click in 2 =" + sessionStorage.myClick);
  // alert("lang =" + sessionStorage.getItem("lang"));
 if(sessionStorage.myClick == 0) {
-  $('[lang="en"]').hide();
+  // $('[lang="en"]').hide();
+   $('[lang="en"]').css('display','none');
   // sessionStorage.myClick = 1;
 }
   else {
-     $('[lang="lt"]').hide();
+     // $('[lang="lt"]').hide();
+      $('[lang="lt"]').css('display','none');
      // sessionStorage.myClick = 0;
    }
              // sessionStorage.myClick = 0;
